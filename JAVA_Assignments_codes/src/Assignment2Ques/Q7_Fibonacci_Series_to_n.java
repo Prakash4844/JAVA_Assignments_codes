@@ -1,7 +1,23 @@
-//Q7.To calculate Fibonacci Series up to n numbers.
+//Q7.To calculate Fibonacci Series of n numbers.
 
 package Assignment2Ques;
 
-public class Q7_Fibonacci_Series_to_n {
+import java.util.Scanner;
 
+public class Q7_Fibonacci_Series_to_n {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a no to calculate Fibonacci Series of those number: ");
+        int n = sc.nextInt();
+        int a = 0;
+        int b = 1;
+        int c;
+        System.out.print(a + " " + b + " ");
+        for (int i = 2; i < n; i++) {
+            c = a + b;
+            System.out.print(c + " ");
+            a = b;
+            b = c;
+        }
+    }
 }
