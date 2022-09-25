@@ -12,7 +12,13 @@ public class Q7_Fibonacci_Series_to_n {
         int a = 0;
         int b = 1;
         int c;
-        System.out.print(a + " " + b + " ");
+        if (n == 1) {
+            System.out.println("0");
+        } else if (n == 0) {
+            System.out.println("No Fibonacci Series for 0");
+        } else {
+            System.out.print(a + " " + b + " ");
+            }
         for (int i = 2; i < n; i++) {
             c = a + b;
             System.out.print(c + " ");
