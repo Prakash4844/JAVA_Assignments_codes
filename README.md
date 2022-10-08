@@ -32,9 +32,11 @@ Here is the structure of Contents:
     Q7_Fibonacci_Series_to_n.java
 	Q8_Palindrome_string.java
     Q9_Armstrong_no_between_2_3digit_no.java
+	Q10_primeNo.java
+	
     Questions.txt
 
-    Total Questions till now: 14 
+    Total Questions till now: 15 
   
 
 </details>
