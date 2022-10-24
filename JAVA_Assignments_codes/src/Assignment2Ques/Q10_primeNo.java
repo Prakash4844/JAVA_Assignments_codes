@@ -1,6 +1,9 @@
+//Q10.Check if a gien no. is prime no.
+package Assignment2Ques;
+
 import java.util.Scanner;
 
-class primeNo {
+public class Q10_primeNo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number to check if it is prime or not: ");
@@ -13,23 +16,17 @@ class primeNo {
         } else if (isPrime == 2 || isPrime == 3) {
             System.out.print("The Given number is prime.");
         } else if (isPrime > 2) {
-            for (int j = i * i; j <= isPrime; i++) {
-                if (isPrime % i == 0) {
+            while (i*i <= isPrime) {
+                if (isPrime % i == 0){
                     primeOrNot = "The Given number is not prime.";
                     break;
                 } else {
                     primeOrNot = "The Given number is prime.";
                 }
+                i++;
             }
-            // while (i*i <= isPrime) {
-            // if (isPrime % i == 0){
-            // primeOrNot = "The Given number is not prime.";
-            // break;
-            // }else {
-            // primeOrNot = "The Given number is prime.";
-            // }
-            // i++;
-            // }
+        } else {
+            System.out.print("Invalid Input");
         }
         System.out.print(primeOrNot);
     }
