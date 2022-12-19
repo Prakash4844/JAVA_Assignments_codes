@@ -63,3 +63,39 @@ Here is the structure of Contents:
   
 
 </details>
+
+<details>
+    <summary>JAVA_Lab_File (BCA Sem 5, BCA-502 Java Programming and Dynamic Webpage Design)</summary>
+
+    Q1. WAP to enter two numbers using command line argument and calculate their sum and multiplication.
+    Q2. WAP enter a no and calculate Fibonacci Series of those number.
+    Q3. WAP to print prime number between Range.(Change code for dynamic range)
+    Q4. WAP to find the greatest number of three numbers
+    Q5. WAP to explain the Frame-set/iframe in html.(HTML)
+            Q5_f1.html
+            Q5_f2.html
+            Q5_f3.html
+    Q6. WAP to Print Pyramid star pattern.
+    Q7 Input a year and find whether it is a leap year or not.
+    Q8. WAP to display the table of 3x3 in html on webpage.(HTML)
+    Q9. WAP to show working of inner class using instance of outer class
+    Q10. WAP to show the overloading of area function.
+    Q11. WAP to check whether a given number is Armstrong or not.
+    Q12. WAP to check whether a given number is Armstrong or not.
+    Q13. WAP to create a package Calc with methods Sum() & Sub() and show the Implementation in a class.
+    Q14. WAP to print reverse of a given number.
+    Q15. WAP to show the working of a single Catch block.
+
+    BCA-V JAVA Practicle File Questions.pdf
+
+    Total Questions till now: 42(Java = 40 + HTML = 2) 
+  
+
+</details>
+
+<details>
+    <summary>Calc(Package for (JAVA_Lab_File Ques-13))</summary>
+    1.Add
+    2.Subtract
+
+</details>
