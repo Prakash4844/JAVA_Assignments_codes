@@ -1,36 +1,53 @@
 //Q23. WAP to retrieve data from database.
 package JAVA_Lab_File;
-
-import java.sql.*;
-import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
-import java.sql.SQLException;
-
-import javax.swing.*;
+import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Q23_Retrieve_DB_data {
-    public class Test {
 
-        public static final boolean Connected() {
-            boolean initialize = SQLiteJDBCLoader.initialize();
+    private Connection connect() {
+        String url = "jdbc:sqlite:Logins.Sqlite3";
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(url);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return conn;
+    }
 
-            SQLiteDataSource dataSource = new SQLiteDataSource();
-            dataSource.setUrl("jdbc:sqlite:/home/users.sqlite");
-            int i=0;
-            try {
-                ResultSet executeQuery = dataSource.getConnection()
-                        .createStatement().executeQuery("select * from \"Table\"");
-                while (executeQuery.next()) {
-                    i++;
-                    System.out.println("out: "+executeQuery.getMetaData().getColumnLabel(i));
-                }
-            } catch (SQLException ex) {
-                JOptionPane.showMessageDialog(null, ex);
+
+    public void selectAll(){
+        String sql = "SELECT * FROM Members";
+
+        try {
+            Statement stmt;
+            try (Connection conn = this.connect()) {
+                stmt = conn.createStatement();
             }
+            ResultSet rs    = stmt.executeQuery(sql);
 
-            return initialize;
-
+            // loop through the result set
+            while (rs.next()) {
+                System.out.println(rs.getInt("id") +  "\t" +
+                        rs.getString("name") + "\t" +
+                        rs.getDouble("capacity"));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
         }
     }
+
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Q23_Retrieve_DB_data app = new Q23_Retrieve_DB_data();
+        app.selectAll();
+    }
+
 }

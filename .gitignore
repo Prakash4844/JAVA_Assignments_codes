@@ -24,3 +24,4 @@ hs_err_pid*
 
 #Output folder
 JAVA_Assignments_codes/out/
+JAVA_Assignments_codes/src/JAVA_Lab_File/Logins.sqlite3
