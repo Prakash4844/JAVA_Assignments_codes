@@ -85,10 +85,20 @@ Here is the structure of Contents:
     Q13. WAP to create a package Calc with methods Sum() & Sub() and show the Implementation in a class.
     Q14. WAP to print reverse of a given number.
     Q15. WAP to show the working of a single Catch block.
+    Q16. WAP to show working of throw and throws for handling exceptions.
+    Q17. WAP to print table of a given number. 
+    Q18. WAP to Create a Login Page using an applet. 
+    Q19. WAP to show working of Vector class in java.
+    Q20. WAP to arrange components using border layout.
+    Q21. WAP to show working of a progress bar. 
+    Q22. WAP to create threads by using Runnable interface.
+    Q23. WAP to retrieve data from database.
+    Q24. WAP to jsp page for adding two number. 
+    Q25. WAP to design a working calculator using event handling. 
 
     BCA-V JAVA Practicle File Questions.pdf
 
-    Total Questions till now: 42(Java = 40 + HTML = 2) 
+    Total Questions till now: 52(Java = 50) + (HTML = 2) 
   
 
 </details>
@@ -99,4 +109,5 @@ Here is the structure of Contents:
     1.Add
     2.Subtract
 
+    Total Questions till now: 54(Java = 52 + HTML = 2) 
 </details>

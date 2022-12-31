@@ -1,5 +1,4 @@
 // Q7. Input a year and find whether it is a leap year or not.
-
 //To know about leap year go to: https://learn.microsoft.com/en-us/office/troubleshoot/excel/determine-a-leap-
 package JAVA_Lab_File;
 

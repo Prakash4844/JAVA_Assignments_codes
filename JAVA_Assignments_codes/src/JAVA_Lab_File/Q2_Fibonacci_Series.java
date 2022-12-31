@@ -1,5 +1,4 @@
 //Q2. WAP to print Fibonacci Series.
-
 package JAVA_Lab_File;
 
 import java.util.Scanner;
